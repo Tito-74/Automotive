@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+    box-sizing: content-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: #fff;
+    /* width: 100%; */
+}
+.container{
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+header{
+    background-image: url(./inages/car-bg.jpg);
+    color: white;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 102px);
+}
+.content{
+    font-size: 2rem;
+    margin: auto 0;
+    max-width: 100%;
+}
+.content h1{
+    color:rgb(11, 180, 236);
+    margin-bottom: 0 ;
+}
+
+nav{
+    padding: 1rem;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 100%; */
+}
+nav .logo{
+    font-size: 2.5rem;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    
+}
+nav li a{
+   color: White;
+   padding: 1rem;
+   text-decoration: none; 
+}
+.selected{
+    font-weight: bold;
+}
+.highlight{
+    background-color: rgb(11, 180, 236);
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+footer strong{
+    color: rgb(11, 180, 236);
+}
+footer p{
+    margin: 0;
+}
+a:hover{
+    background-color: rgb(228, 210, 228);
+}
+
+/* media queries */
+@media only screen and (max-width:700px){
+    nav ul{
+        flex-direction: column;
+    }
+    nav li:not(:last-child){
+        margin-bottom: 1rem;
+
+    }
+    nav .highlight{
+        display: none;
+    }
+    footer ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer li{
+        margin: 1rem;
+        text-align: center;
+    }
+    .content{
+        font-size: 1.2rem;
+        margin: 0.5rem auto 0;
+
+    }
+    
+}
